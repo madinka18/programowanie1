@@ -3,9 +3,9 @@ package pl.sdacademy.homework;
 import java.util.Scanner;
 
 public class table {
-    static Scanner scanner = new Scanner(System.in);
-    static int [] newTable = addingNumbersToTheArray();
-   static float average;
+    private static Scanner scanner = new Scanner(System.in);
+    private static int [] newTable = addingNumbersToTheArray();
+   private static float average;
 
     public static void main(String[] args) {
 
@@ -14,16 +14,15 @@ public class table {
 
     }
 
-    private static float averageValue() {
+    private static void averageValue() {
         int sum =0;
 
-        for (int i = 0; i <newTable.length; i++) {
-            sum += newTable[i];
-            average = (float) (sum /(double) newTable.length);
+        for (int aNewTable : newTable) {
+            sum += aNewTable;
+            average = (sum / (float) newTable.length);
 
         }
         System.out.println("średnia arytmetyczna podanej tablicy wynosi: " + average);
-        return average;
     }
 
     private static void printTable(int [] table) {
