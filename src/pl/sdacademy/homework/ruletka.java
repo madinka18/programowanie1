@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.homework;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -57,7 +57,7 @@ public class ruletka {
             if (rouletteGame()) {
                 cash = cash + (amount * 2);
             } else {
-                cash = cash - (amount * 2);
+                cash = cash - (amount);
             }
 
         }

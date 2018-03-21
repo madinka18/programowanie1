@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;
